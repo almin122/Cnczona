@@ -1,0 +1,186 @@
+/* Reset osnovnih margina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+.header-text h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.header-text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+#proizvodi {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#proizvodi h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.proizvod {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.proizvod:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.proizvod img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.proizvod h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.proizvod p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#kontakt {
+  margin-bottom: 40px;
+}
+#kontakt h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form button {
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #444;
+}
+.contact-info {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-text {
+    text-align: left;
+  }
+  nav {
+    gap: 30px;
+  }
+  .contact-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  form {
+    width: 48%;
+  }
+  .contact-info {
+    width: 48%;
+    text-align: left;
+  }
+}
